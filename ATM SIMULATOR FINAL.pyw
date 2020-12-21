@@ -56,6 +56,7 @@ def YesNewAccount():
     f = open(i, 'w')                                                            # creating a new account file
     Label(root1, text="YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED.\n").pack()
     Label(root1, text="YOUR DEFAULT 4 DIGIT SECURITY PIN IS *0000*\nYOU CAN CHANGE IT LATER.").pack()
+    Label(root1, text="YOU CAN DEPOSIT MONEY AFTER CHANGING THE SECURITY PIN", fg="red").pack()
     f.write("0000")                                                             # storing the PIN in the file
     f.write("\n")
     f.write("0")                                                                # initiating the account with zero funds
